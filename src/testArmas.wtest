@@ -1,0 +1,9 @@
+import armas.*
+
+test "ballesta luego de 2 usos tiene 8 flechas" {
+	
+	ballesta.registrarUso()
+	ballesta.registrarUso()
+	assert.that(ballesta.estaCargada())
+	assert.equals(8 , ballesta.cantidadDeFlechas()) //acá nos damos cuenta que no hicimos un método para ver la cantidad de flechas así que editamos armas
+}

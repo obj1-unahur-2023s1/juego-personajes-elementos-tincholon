@@ -1,0 +1,15 @@
+import jugadorxs.*
+import elementos.*
+import personajes.*
+
+test "probamos a Luisa con Mario encontrando a Aurora y al castillo" {
+	
+	luisa.personajeActivo(mario)
+	luisa.aparece(aurora)
+	luisa.aparece(castillo)
+	
+	assert.equals(170 , castillo.nivelDeDefensa()) //esto devuelve TRUE	cuando el nivel de defensa sea 170
+	assert.equals(45 , mario.valorRecolectado()) //equals es para numeros, that es para bool
+	assert.that(mario.estaFeliz()) //that para saber si es verdadero y notThat cuando queremos saber si es falso
+	assert.equals(castillo , mario.ultimoElementoVisto())
+}
