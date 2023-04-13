@@ -25,7 +25,7 @@ object aurora {
 		}
 		Acá queda muchísimo mejor que usando if
 		*/
-		estaViva = not(potencia >= 10) 
+		estaViva = not(potenciaDeAtaque >= 10) 
 	}
 	method recibirTrabajo(){}
 	method recibirValor() = 15
